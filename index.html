@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafael William</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;700;900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <form action="index.html" method="post">
+        <div class="image">
+            <img src="imagens/riachuelo-logo.png" alt="">
+        </div>
+        <h4>destaque do mês</h4>
+        <div class="id_colab">
+            <input type="text" placeholder="Mátricula" id="valorName" autocomplete="off" required>
+            <i onclick="lupa()" class='bx bx-search' ></i>
+        </div>
+        <h3 id="colab">Candidato</h3>
+        <p class="p1">Uma nota de 0 a 5</p>
+        <p id="print">1</p>
+        <div>
+            <p onclick="Soma()" class="click"><i class='bx bx-plus' ></i></p>
+            <p id="redmessage"></p>
+        </div>
+        
+        
+        
+        <p class="pPen">
+            <b>Candidato é bom em:</b>
+        <p/>
+        <select name="selection" id="sec" required>
+            <option value="valnull" selected disabled>Selecione um valor</option>
+            <optgroup label="Pessoais">
+                <option value="val1">Dedicação</option>
+                <option value="val1">Espirito de Equipe</option>
+            </optgroup>
+            <optgroup label="Público">
+                <option value="val1">Lidar com cliente</option>
+                <option value="val1">Solicionar problemas</option>
+            </optgroup>
+        </select>
+        <br>
+        <button><i class='bx bxs-chevrons-right'></i></button>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
